@@ -1,0 +1,46 @@
+---
+import AgendaDevFest from '@/components/AgendaDevFest.astro';
+import CharlasSection from '@/components/CharlasSection.astro';
+import ColaboradorSection from '@/components/ColaboradorSection.astro';
+import DetallesEvento from '@/components/DetallesEvento.astro';
+import DevelopersSection from '@/components/DevelopersSection.astro';
+import HeroSection from '@/components/HeroSection.astro';
+import OrganizadoresSection from '@/components/OrganizadoresSection.astro';
+import Patrocinadores from '@/components/Patrocinadores.astro';
+import PonentesSection from '@/components/PonentesSection.astro';
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="GDG Aranjuez | DevFest 2025">
+  <main class="max-w-4xl mx-auto px-6 py-2 md:py-2">
+    <!-- Hero Section -->
+    <HeroSection />
+
+    <!-- Detalles Evento -->
+    <DetallesEvento />
+
+    <!-- Seccion de Organizadores -->
+    <OrganizadoresSection />
+
+    <!-- Agenda del evento -->
+    <AgendaDevFest />
+
+    <!-- Seccion Charlas -->
+    <CharlasSection />
+
+    <!-- Seccion de Ponentes -->
+    <PonentesSection />
+
+    <!-- Seccion de Colaboradores -->
+    <ColaboradorSection />
+
+    <!-- Seccion de Colaboradores -->
+    <DevelopersSection />
+
+    <!-- Seccion de Patrocinadores -->
+    <Patrocinadores />
+  </main>
+
+  <!-- Blog
+  <PostsSection /> -->
+</Layout>
