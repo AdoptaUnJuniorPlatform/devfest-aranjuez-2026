@@ -1,11 +1,11 @@
 ---
-import AgendaSection from "./AgendaSection.astro";
+import ScheduleSection from "./ScheduleSection.astro";
 
-const agenda = [
+const schedule = [
   {
     titulo: "Agenda 2025",
-    id: "agenda",
-    agenda: [{
+    id: "schedule",
+    items: [{
       hora: '09:00',
       duracion: '30m',
       titulo: 'Apertura y registro',
@@ -14,91 +14,91 @@ const agenda = [
       hora: '09:30',
       duracion: '30m',
       titulo: 'Presentación',
-      ponente: '',
+      speaker: '',
       perfil: '',
     },
     {
       hora: '10:00',
       duracion: '50m',
       titulo: 'Conceptualización del sonido como mecánica para narrar historias',
-      ponente: 'Pablo Rodríguez-Tembleco',
+      speaker: 'Pablo Rodríguez-Tembleco',
       perfil: '',
     },
     {
       hora: '10:50',
       duracion: '30m',
       titulo: 'Psicología del feedback: cómo dar y recibir feedback sin romper el equipo',
-      ponente: 'Estefanía Peromingo',
+      speaker: 'Estefanía Peromingo',
       perfil: '',
     },
     {
       hora: '11:20',
       duracion: '30m',
       titulo: 'Como conseguir tu primer trabajo en Tech',
-      ponente: 'Sergi Olives ',
+      speaker: 'Sergi Olives ',
       perfil: '',
     },
     {
       hora: '11:50',
       duracion: '30m',
       titulo: 'Desayuno',
-      ponente: '',
+      speaker: '',
       perfil: '',
     },
     {
       hora: '12:20',
       duracion: '50m',
       titulo: 'MCPs con Kotlin: Creando Superpoderes para tu Asistente IA',
-      ponente: 'Antonio Leiva',
+      speaker: 'Antonio Leiva',
       perfil: '',
     },
     {
       hora: '13:10',
       duracion: '20m',
       titulo: 'Magia',
-      ponente: 'Raúl Fernández',
+      speaker: 'Raúl Fernández',
       perfil: '',
     },
     {
       hora: '13:30',
       duracion: '30m',
       titulo: 'Reinventarse hacia el mundo Tech',
-      ponente: 'Maria del Carmen Tajuelo',
+      speaker: 'Maria del Carmen Tajuelo',
       perfil: '',
     },
     {
       hora: '14:00',
       duracion: '30m',
       titulo: 'Agentes Python del Mañana: Descifrando los Enigmas de Planificación, UX y Memoria',
-      ponente: 'Máximo Fernández Núñez',
+      speaker: 'Máximo Fernández Núñez',
       perfil: '',
     },
     {
       hora: '14:30',
       duracion: '1h 15m',
       titulo: 'Comida',
-      ponente: '',
+      speaker: '',
       perfil: '',
     },
     {
       hora: '15:45',
       duracion: '50m',
       titulo: 'dose.VR()',
-      ponente: 'Irene Ruiz Pozo',
+      speaker: 'Irene Ruiz Pozo',
       perfil: '',
     },
     {
       hora: '16:35',
       duracion: '65m',
       titulo: 'Mesa redonda',
-      ponente: 'Antonio Leiva, Máximo Fernández Núñez, Clara Quince, Lucía Cordero',
+      speaker: 'Antonio Leiva, Máximo Fernández Núñez, Clara Quince, Lucía Cordero',
       perfil: '',
     },
     {
       hora: '17:40',
       duracion: '50m',
       titulo: 'Vision Language Model',
-      ponente: 'Moisés Martínez',
+      speaker: 'Moisés Martínez',
       perfil: '',
     },
     {
@@ -110,7 +110,7 @@ const agenda = [
   {
     titulo: "Workshop Seguridad",
     id: "workshop",
-    agenda: [{
+    items: [{
       hora: '12:20',
       duracion: '12:20 - 14:30',
       titulo: 'CTF DevFest Aranjuez',
@@ -118,13 +118,13 @@ const agenda = [
       perfil: '',
     }]
   }
-] 
+]
 
 
 ---
 
 {
-  agenda.map((item: any) => (
-    <AgendaSection {...item} />
+  schedule.map((item: any) => (
+    <ScheduleSection {...item} />
   ))
 }

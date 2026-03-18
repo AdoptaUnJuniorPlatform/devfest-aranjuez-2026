@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!aranjuezLogo) return;
 
     aranjuezLogo.src = isDark
-      ? '/patrocinadores/aranjuez-firma_blanco-01.webp'
-      : '/patrocinadores/aranjuez-firma_negro-01.webp';
+      ? '/sponsors/aranjuez-firma_blanco-01.webp'
+      : '/sponsors/aranjuez-firma_negro-01.webp';
   }
 
   // Establecer icono y logo al cargar

@@ -2,7 +2,7 @@
 import Card from './Card.astro';
 import Section from './Section.astro';
 
-const ponentes = [
+const speakers = [
   {
     name: 'Lucía Cordero',
     role: '',
@@ -121,14 +121,14 @@ const ponentes = [
 ];
 ---
 
-<Section id="ponentes" title="Ponentes">
+<Section id="speakers" title="Speakers">
   {
-    ponentes.map((pon) => (
+    speakers.map((speaker) => (
       <Card
-        name={pon.name}
-        role={pon.role}
-        picture={pon.picture}
-        socials={pon.socials}
+        name={speaker.name}
+        role={speaker.role}
+        picture={speaker.picture}
+        socials={speaker.socials}
         variant="blue"
       />
     ))

@@ -1,5 +1,5 @@
 ---
-const { titulo, id, agenda } = Astro.props;
+const { titulo, id, items } = Astro.props;
 ---
 <section
   id={id}
@@ -16,7 +16,7 @@ const { titulo, id, agenda } = Astro.props;
   </h2>
   <ul class="space-y-6">
     {
-      agenda.map((item: any) => (
+      items.map((item: any) => (
         <li
           class="grid grid-cols-[80px_1fr] gap-x-6 items-start text-lg
                   border-b border-gray-400 dark:border-gray-600 pb-4 last:border-b-0"
@@ -26,9 +26,9 @@ const { titulo, id, agenda } = Astro.props;
           </time>
           <div>
             <div class="font-semibold">{item.titulo}</div>
-            {item.ponente && (
+            {item.speaker && (
               <div class="text-gray-700 dark:text-gray-300 text-base mt-1">
-                Ponente: {item.ponente}
+                Speaker: {item.speaker}
               </div>
             )}
             <div class="text-gray-700 dark:text-gray-300 text-base mt-1">

@@ -3,11 +3,11 @@ import Card from './Card.astro';
 import Section from './Section.astro';
 import Socials from './Socials.astro';
 
-const colaboradores = [
+const collaborators = [
   {
     name: 'Jorge Castillo',
     role: 'Creator of Effective Android',
-    picture: '/colaboradores/jorge-castillo.webp',
+    picture: '/collaborators/jorge-castillo.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/jorgecastillopr/',
     },
@@ -16,7 +16,7 @@ const colaboradores = [
   {
     name: 'Raúl Fernández',
     role: 'Ilusionista',
-    picture: '/colaboradores/elmago.webp',
+    picture: '/collaborators/elmago.webp',
     socials: {
       instagram:
         'https://www.instagram.com/magicraulin?igsh=MW1nNXJydnU2YjM1ZQ%3D%3D&utm_source=qr',
@@ -27,7 +27,7 @@ const colaboradores = [
   {
     name: 'Nicolás Moreno',
     role: 'Audiovisuales y sonido',
-    picture: '/colaboradores/nicolas.webp',
+    picture: '/collaborators/nicolas.webp',
     socials: {
       linkedin:
         'https://www.linkedin.com/in/nicolás-moreno-gonzalez/',
@@ -36,7 +36,7 @@ const colaboradores = [
   {
     name:'Adrián Sánchez',
     role:'Audiovisuales y sonido',
-    picture: '/colaboradores/Adrybeatz_1.webp',
+    picture: '/collaborators/Adrybeatz_1.webp',
     socials: {
       instagram: 'https://www.instagram.com/adrybeatz/',
 
@@ -45,7 +45,7 @@ const colaboradores = [
   {
     name:'Ana Paredes',
     role:'Presentadora',
-    picture: '/colaboradores/AnaParedes.webp',
+    picture: '/collaborators/AnaParedes.webp',
     socials: {
       instagram: 'https://www.instagram.com/anaparedes__?igsh=MWg1d3dncnhwcjNrZA==',
       website: 'https://starofknowledge.es/',
@@ -55,9 +55,9 @@ const colaboradores = [
 ];
 ---
 
-<Section id="colaboradores" title="Colaboradores">
+<Section id="collaborators" title="Collaborators">
   {
-    colaboradores.map((colab) => (
+    collaborators.map((colab) => (
       <Card
         name={colab.name}
         role={colab.role}
