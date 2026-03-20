@@ -46,19 +46,19 @@ El año pasado se realizó el primer evento grande, el [DevFest 2024](https://de
 ```
 GDGAranjuez/
 ├─ public/               # Archivos públicos y estáticos accesibles por ruta directa
-│  ├─ colaboradores/     # Fotos de los colaboradores
-│  ├─ desarrolladores/   # Iconos de los desarrolladores
-│  ├─ icons/             # Iconos del sitio
-│  ├─ img/               # Imágenes generales
-│  ├─ organizadores/     # Fotos de los organizadores
-│  ├─ patrocinadores/    # Logos de los patrocinadores
-│  ├─ speakers/          # Fotos de los ponentes
+│  ├─ collaborators/     # Collaborator photos
+│  ├─ developers/        # Developer avatars
+│  ├─ icons/             # Site icons
+│  ├─ img/               # General images
+│  ├─ organizers/        # Organizer photos
+│  ├─ sponsors/          # Sponsor logos
+│  ├─ speakers/          # Speaker photos
 │  ├─ gdg-favicon.jpg    # Favicon personalizado
 │  └─ themeToggle.js     # Script para modo claro/oscuro
 │
 ├─ src/
 │  ├─ components/        # Componentes Astro reutilizables y secciones de página
-│  │  └─ *.astro         # Agenda, Charlas, Navbar, Footer, etc.
+│  │  └─ *.astro         # Schedule, Talks, Navbar, Footer, etc.
 │  │
 │  ├─ content/           # Contenido dinámico (entradas del blog en Markdown)
 │  │  ├─ _template/      # Artículos individuales
@@ -101,7 +101,7 @@ GDGAranjuez/
 | Elemento                               | Estado             | Comentarios                                                                                                                     |
 | -------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
 | Despliegue automático                  | ✅ Completado      | Se actualiza con cada cambio en `main`. Enlace: [devfest2025.gdgaranjuez.com](https://devfest2025.gdgaranjuez.com/)             |
-| Componentes reutilizables y responsive | ✅ Completado      | Secciones como agenda, charlas, ponentes, organizadores y patrocinadores implementadas como componentes reutilizables.          |
+| Componentes reutilizables y responsive | ✅ Completado      | Sections like schedule, talks, speakers, organizers and sponsors implemented as reusable components.          |
 | Modo claro / oscuro                    | ✅ Completado      | Toggle funcional con soporte visual completo.                                                                                   |
 | Blog en Markdown                       | ✅ Completado      | Sección de artículos funcional con posts dinámicos.                                                                             |
 | Subdominios y estructura por ediciones | ❎ Parcial         | La edición 2024 está enlazada desde el subdominio 2025. Falta implementar estructura base para futuras ediciones y dominio GDG. |
@@ -139,7 +139,7 @@ Este proyecto cuenta con un workflow de GitHub Actions que automatiza el desplie
 
 ---
 
-## 🧪 Ejecutar localmente (opcional para desarrolladores)
+## 🧪 Run locally (optional for developers)
 
 ### 📋 Requisitos previos
 
@@ -173,7 +173,7 @@ http://localhost:4321
 
 ---
 
-## 👩‍💻 Desarrolladores
+## 👩‍💻 Developers
 
 | <img src="https://github.com/RaulGamBalonga.png" width=70><br>&nbsp;&nbsp;<a href="https://github.com/RaulGamBalonga">Raúl Gambalonga</a>&nbsp; | <img src="https://github.com/AngieMiv.png" width=70><br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/AngieMiv">Angie M. I. V.</a>&nbsp;&nbsp;&nbsp;&nbsp; | <img src="https://github.com/Aredhel269.png" width=70><br>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Aredhel269">Glòria Monzó</a>&nbsp;&nbsp;&nbsp;| <img src="https://github.com/belensuarez477.png" width=70><br>&nbsp;&nbsp;&nbsp;<a href="https://github.com/belensuarez477">Belén Suárez</a>&nbsp;&nbsp;&nbsp;&nbsp; |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |

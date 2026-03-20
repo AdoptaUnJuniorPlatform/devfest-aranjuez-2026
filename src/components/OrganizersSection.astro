@@ -2,12 +2,12 @@
 import Card from './Card.astro';
 import Section from './Section.astro';
 
-const organizadores = [
-  /* Lista de organizadores con name, role, picture, y link a socials */
+const organizers = [
+  /* List of organizers with name, role, picture, and socials link */
   {
     name: 'Ángeles Vázquez',
     role: 'Eventbrite',
-    picture: '/organizadores/angeles_vazquez_parra.webp',
+    picture: '/organizers/angeles_vazquez_parra.webp',
     socials: {
       twitter: 'https://twitter.com/avazpar',
       linkedin:
@@ -17,7 +17,7 @@ const organizadores = [
   {
     name: 'Juanje Cilla',
     role: 'Hiberus',
-    picture: '/organizadores/juanje_cilla_ugarte.webp',
+    picture: '/organizers/juanje_cilla_ugarte.webp',
     socials: {
       linkedin:
         'https://www.linkedin.com/in/juan-jes%C3%BAs-cilla-ugarte-00a72a107/',
@@ -26,7 +26,7 @@ const organizadores = [
   {
     name: 'Saúl Díaz',
     role: 'Eventbrite',
-    picture: '/organizadores/saul_diaz.webp',
+    picture: '/organizers/saul_diaz.webp',
     socials: {
       twitter:
         'https://x.com/i/flow/login?redirect_after_login=%2FSefford',
@@ -36,7 +36,7 @@ const organizadores = [
   {
     name: 'Patricia Tarazaga',
     role: 'Eventbrite',
-    picture: '/organizadores/patricia_tarazaga.webp',
+    picture: '/organizers/patricia_tarazaga.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/patricia-tarazaga/',
     },
@@ -44,7 +44,7 @@ const organizadores = [
   {
     name: 'Daniel Brinzei',
     role: 'Zartis',
-    picture: '/organizadores/daniel_brinzei.webp',
+    picture: '/organizers/daniel_brinzei.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/daniel-brinzei/',
     },
@@ -52,9 +52,9 @@ const organizadores = [
 ];
 ---
 
-<Section id="organizadores" title="Organizadores">
+<Section id="organizers" title="Organizers">
   {
-    organizadores.map((org) => (
+    organizers.map((org) => (
       <Card
         name={org.name}
         role={org.role}

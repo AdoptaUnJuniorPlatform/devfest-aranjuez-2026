@@ -2,10 +2,10 @@
 import Card from './Card.astro';
 import Section from './Section.astro';
 
-const desarrolladores = [
+const developers = [
   {
     name: 'Angie M. I. V.',
-    picture: '/desarrolladores/AngieMIV.webp',
+    picture: '/developers/AngieMIV.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/angiemiv/',
       github: 'https://github.com/AngieMiv',
@@ -14,7 +14,7 @@ const desarrolladores = [
   },
   {
     name: 'Belén Suarez',
-    picture: '/desarrolladores/BelenSuarez.webp',
+    picture: '/developers/BelenSuarez.webp',
     socials: {
       linkedin:
         'https://www.linkedin.com/in/belen-suarez-42a4331b5/',
@@ -23,7 +23,7 @@ const desarrolladores = [
   },
   {
     name: 'Glòria Monzó',
-    picture: '/desarrolladores/GloriaMonzo.webp',
+    picture: '/developers/GloriaMonzo.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/gloriamonzo240879',
       github: 'https://github.com/Aredhel269',
@@ -31,7 +31,7 @@ const desarrolladores = [
   },
   {
     name: 'Raúl Gambalonga',
-    picture: '/desarrolladores/RaulGambalonga.webp',
+    picture: '/developers/RaulGambalonga.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/raul-gambalonga/',
       github: 'https://github.com/RaulGamBalonga',
@@ -39,7 +39,7 @@ const desarrolladores = [
   },
   {
     name: 'J. Ramón Carralero',
-    picture: '/desarrolladores/JRamonCarralero.webp',
+    picture: '/developers/JRamonCarralero.webp',
     socials: {
       linkedin:
         'https://www.linkedin.com/in/jos%C3%A9-ram%C3%B3n-carralero-garc%C3%ADa-75381b208/',
@@ -48,7 +48,7 @@ const desarrolladores = [
   },
   {
     name: 'Manuel Tomasino',
-    picture: '/desarrolladores/ManuelTomasino.webp',
+    picture: '/developers/ManuelTomasino.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/manuel-tomasino',
       github: 'https://github.com/ShadeVI',
@@ -56,7 +56,7 @@ const desarrolladores = [
   },
   {
     name: 'Marlon Velásquez',
-    picture: '/desarrolladores/MarlonVelasquez.webp',
+    picture: '/developers/MarlonVelasquez.webp',
     socials: {
       linkedin: 'https://www.linkedin.com/in/marlon-velasquez/',
       github: 'https://github.com/sargentogato',
@@ -65,9 +65,9 @@ const desarrolladores = [
 ];
 ---
 
-<Section id="desarrolladores" title="Desarrolladores">
+<Section id="developers" title="Developers">
   {
-    desarrolladores.map((dev) => (
+    developers.map((dev) => (
       <Card
         name={dev.name}
         picture={dev.picture}

@@ -1,21 +1,21 @@
 ---
 interface Props {
-  tituloCharla: string;
+  talkTitle: string;
   descripcion: string;
-  nombrePonente: string;
+  speakerName: string;
   variant?: 'slate' | 'purple' | 'blue';
 }
 
 const {
-  tituloCharla,
+  talkTitle,
   descripcion,
-  nombrePonente,
+  speakerName,
   variant = 'slate',
 } = Astro.props;
 
 const idModal =
-  tituloCharla && nombrePonente
-    ? `modal-${tituloCharla.replace(/\s+/g, '-').toLowerCase()}-${nombrePonente.replace(/\s+/g, '-').toLowerCase()}`
+  talkTitle && speakerName
+    ? `modal-${talkTitle.replace(/\s+/g, '-').toLowerCase()}-${speakerName.replace(/\s+/g, '-').toLowerCase()}`
     : 'modal-generico';
 const resumen = descripcion
   ? descripcion.slice(0, 150) + '...'
@@ -51,10 +51,10 @@ const currentVariant = variants[variant];
   >
     <h3
       class={`text-xl font-semibold mb-2 underline ${currentVariant.text}`}
-      >{tituloCharla}</h3
+      >{talkTitle}</h3
     >
     <p class={`text-sm font-semibold ${currentVariant.subtext}`}
-      >{nombrePonente}</p
+      >{speakerName}</p
     >
     <p
       class={`text-sm ${currentVariant.subtext} whitespace-pre-line break-words leading-relaxed`}
@@ -90,7 +90,7 @@ const currentVariant = variants[variant];
       </form>
 
       <h3 class="text-1x2 font-bold mb-4 dark:text-white"
-        >{tituloCharla}</h3
+        >{talkTitle}</h3
       >
       <p
         class="text-base mb-4 text-gray-700 dark:text-gray-300 whitespace-pre-line break-words leading-relaxed"
@@ -98,7 +98,7 @@ const currentVariant = variants[variant];
       >
       <p
         class="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2"
-        >Ponente: {nombrePonente}</p
+        >Speaker: {speakerName}</p
       >
     </dialog>
   </article>
