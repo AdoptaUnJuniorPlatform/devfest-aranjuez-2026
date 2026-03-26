@@ -62,29 +62,18 @@
     </div>
   </div>
   <script type="module" lang="ts">
-    const eventDate = '2025-10-04';
-    const eventStart = new Date(
-      `${eventDate}T09:00:00+02:00`
-    ).getTime();
-    const eventEnd = new Date(
-      `${eventDate}T19:00:00+02:00`
-    ).getTime();
+    const eventDate = '2026-10-03';
+    const eventStart = new Date(`${eventDate}T09:00:00+02:00`).getTime();
+    const eventEnd = new Date(`${eventDate}T19:00:00+02:00`).getTime();
 
     const daysEl = document.getElementById('days');
     const hoursEl = document.getElementById('hours');
     const minutesEl = document.getElementById('minutes');
     const secondsEl = document.getElementById('seconds');
-    const daysContainer =
-      document.getElementById('days-container');
-    const secondsContainer = document.getElementById(
-      'seconds-container'
-    );
-    const countdownTitle = document.getElementById(
-      'countdown-title'
-    );
-    const countdownContainer = document.getElementById(
-      'countdown-container'
-    );
+    const daysContainer = document.getElementById('days-container');
+    const secondsContainer = document.getElementById('seconds-container');
+    const countdownTitle = document.getElementById('countdown-title');
+    const countdownContainer = document.getElementById('countdown-container');
     const hoursContainer = hoursEl.parentElement;
     const minutesContainer = minutesEl.parentElement;
 
@@ -111,15 +100,9 @@
           secondsContainer.style.display = 'none';
 
           const distance = eventStart - nowTime;
-          const days = Math.floor(
-            distance / (1000 * 60 * 60 * 24)
-          );
-          const hours = Math.floor(
-            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor(
-            (distance % (1000 * 60 * 60)) / (1000 * 60)
-          );
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
           daysEl.innerText = days.toString();
           hoursEl.innerText = hours.toString().padStart(2, '0');
