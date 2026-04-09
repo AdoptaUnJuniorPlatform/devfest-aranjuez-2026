@@ -1,14 +1,14 @@
 ---
 interface Props {
   talkTitle: string;
-  descripcion: string;
+  description: string;
   speakerName: string;
   variant?: 'slate' | 'purple' | 'blue';
 }
 
 const {
   talkTitle,
-  descripcion,
+  description,
   speakerName,
   variant = 'slate',
 } = Astro.props;
@@ -17,8 +17,8 @@ const idModal =
   talkTitle && speakerName
     ? `modal-${talkTitle.replace(/\s+/g, '-').toLowerCase()}-${speakerName.replace(/\s+/g, '-').toLowerCase()}`
     : 'modal-generico';
-const resumen = descripcion
-  ? descripcion.slice(0, 150) + '...'
+const resumen = description
+  ? description.slice(0, 150) + '...'
   : '';
 
 // Definir variantes de color
@@ -94,7 +94,7 @@ const currentVariant = variants[variant];
       >
       <p
         class="text-base mb-4 text-gray-700 dark:text-gray-300 whitespace-pre-line break-words leading-relaxed"
-        >{descripcion}</p
+        >{description}</p
       >
       <p
         class="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-2"
