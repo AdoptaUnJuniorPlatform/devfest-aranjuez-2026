@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Jorge Castillo",
+    "role": "Creator of Effective Android",
+    "picture": "/collaborators/jorge-castillo.webp",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/jorgecastillopr/"
+    }
+  },
+  {
+    "name": "Raúl Fernández",
+    "role": "Ilusionista",
+    "picture": "/collaborators/elmago.webp",
+    "socials": {
+      "instagram": "https://www.instagram.com/magicraulin?igsh=MW1nNXJydnU2YjM1ZQ%3D%3D&utm_source=qr",
+      "website": "https://www.atrapalo.com/entradas/contagia-tu-magia_e4920148/"
+    }
+  },
+  {
+    "name": "Nicolás Moreno",
+    "role": "Audiovisuales y sonido",
+    "picture": "/collaborators/nicolas.webp",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/nicolás-moreno-gonzalez/"
+    }
+  },
+  {
+    "name": "Adrián Sánchez",
+    "role": "Audiovisuales y sonido",
+    "picture": "/collaborators/Adrybeatz_1.webp",
+    "socials": {
+      "instagram": "https://www.instagram.com/adrybeatz/"
+    }
+  },
+  {
+    "name": "Ana Paredes",
+    "role": "Presentadora",
+    "picture": "/collaborators/AnaParedes.webp",
+    "socials": {
+      "instagram": "https://www.instagram.com/anaparedes__?igsh=MWg1d3dncnhwcjNrZA==&utm_source=qr",
+      "website": "https://starofknowledge.es/"
+    }
+  }
+]
