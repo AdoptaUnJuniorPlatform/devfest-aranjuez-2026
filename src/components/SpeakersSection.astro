@@ -5,15 +5,16 @@ import speakers from '../data/speakers.json';
 ---
 
 <Section id="speakers" title="Speakers">
-  {
-    speakers.map((speaker) => (
-      <Card
-        name={speaker.name}
-        role={speaker.role}
-        picture={speaker.picture}
-        socials={speaker.socials}
-        variant="blue"
-      />
-    ))
+  {speakers.length > 0
+    ? speakers.map((speaker) => (
+        <Card
+          name={speaker.name}
+          role={speaker.role}
+          picture={speaker.picture}
+          socials={speaker.socials}
+          variant="blue"
+        />
+      ))
+    : <p class={`text-lg font-semibold text-white`}>No hay ponentes disponibles en este momento.</p>
   }
 </Section>
