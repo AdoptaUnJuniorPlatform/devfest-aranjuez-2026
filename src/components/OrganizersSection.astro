@@ -1,67 +1,23 @@
 ---
 import Card from './Card.astro';
 import Section from './Section.astro';
-
-const organizers = [
-  /* List of organizers with name, role, picture, and socials link */
-  {
-    name: 'Ángeles Vázquez',
-    role: 'Eventbrite',
-    picture: '/organizers/angeles_vazquez_parra.webp',
-    socials: {
-      twitter: 'https://twitter.com/avazpar',
-      linkedin:
-        'https://www.linkedin.com/in/angeles-vazquez-parra/',
-    },
-  },
-  {
-    name: 'Juanje Cilla',
-    role: 'Hiberus',
-    picture: '/organizers/juanje_cilla_ugarte.webp',
-    socials: {
-      linkedin:
-        'https://www.linkedin.com/in/juan-jes%C3%BAs-cilla-ugarte-00a72a107/',
-    },
-  },
-  {
-    name: 'Saúl Díaz',
-    role: 'Eventbrite',
-    picture: '/organizers/saul_diaz.webp',
-    socials: {
-      twitter:
-        'https://x.com/i/flow/login?redirect_after_login=%2FSefford',
-      linkedin: 'https://www.linkedin.com/in/sefford/',
-    },
-  },
-  {
-    name: 'Patricia Tarazaga',
-    role: 'Eventbrite',
-    picture: '/organizers/patricia_tarazaga.webp',
-    socials: {
-      linkedin: 'https://www.linkedin.com/in/patricia-tarazaga/',
-    },
-  },
-  {
-    name: 'Daniel Brinzei',
-    role: 'Zartis',
-    picture: '/organizers/daniel_brinzei.webp',
-    socials: {
-      linkedin: 'https://www.linkedin.com/in/daniel-brinzei/',
-    },
-  },
-];
+import organizers from '../data/organizers.json';
 ---
 
 <Section id="organizers" title="Organizers">
   {
-    organizers.map((org) => (
-      <Card
-        name={org.name}
-        role={org.role}
-        picture={org.picture}
-        socials={org.socials}
-        variant="purple"
-      />
-    ))
+    organizers.length > 0 ? (
+      (organizers as Organizer[]).map((org) => (
+        <Card
+          name={org.name}
+          role={org.role}
+          picture={org.picture}
+          socials={org.socials}
+          variant="purple"
+        />
+      ))
+    ) : (
+      <p class="text-center dark:text-white">Aún no hay organizadores listados.</p>
+    )
   }
 </Section>
