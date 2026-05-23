@@ -2,69 +2,24 @@
 import Card from './Card.astro';
 import Section from './Section.astro';
 import Socials from './Socials.astro';
+import collaborator from '../data/collaborators.json'
 
-const collaborators = [
-  {
-    name: 'Jorge Castillo',
-    role: 'Creator of Effective Android',
-    picture: '/collaborators/jorge-castillo.webp',
-    socials: {
-      linkedin: 'https://www.linkedin.com/in/jorgecastillopr/',
-    },
-  },
-
-  {
-    name: 'Raúl Fernández',
-    role: 'Ilusionista',
-    picture: '/collaborators/elmago.webp',
-    socials: {
-      instagram:
-        'https://www.instagram.com/magicraulin?igsh=MW1nNXJydnU2YjM1ZQ%3D%3D&utm_source=qr',
-      website:
-        'https://www.atrapalo.com/entradas/contagia-tu-magia_e4920148/',
-    },
-  },
-  {
-    name: 'Nicolás Moreno',
-    role: 'Audiovisuales y sonido',
-    picture: '/collaborators/nicolas.webp',
-    socials: {
-      linkedin:
-        'https://www.linkedin.com/in/nicolás-moreno-gonzalez/',
-    },
-  },
-  {
-    name:'Adrián Sánchez',
-    role:'Audiovisuales y sonido',
-    picture: '/collaborators/Adrybeatz_1.webp',
-    socials: {
-      instagram: 'https://www.instagram.com/adrybeatz/',
-
-    },
-  },
-  {
-    name:'Ana Paredes',
-    role:'Presentadora',
-    picture: '/collaborators/AnaParedes.webp',
-    socials: {
-      instagram: 'https://www.instagram.com/anaparedes__?igsh=MWg1d3dncnhwcjNrZA==',
-      website: 'https://starofknowledge.es/',
-      
-    },
-  }
-];
 ---
 
 <Section id="collaborators" title="Collaborators">
   {
-    collaborators.map((colab) => (
-      <Card
-        name={colab.name}
-        role={colab.role}
-        picture={colab.picture}
-        socials={colab.socials}
-        variant="slate"
-      />
-    ))
+    collaborator.length > 0 ? (
+      (collaborator as any[]).map((colab) => (
+        <Card
+          name={colab.name}
+          role={colab.role}
+          picture={colab.picture}
+          socials={colab.socials}
+          variant="slate"
+        />
+      ))
+    ) : (
+      <p class="text-center dark:text-white py-10">Próximamente anunciaremos a nuestros colaboradores.</p>
+    )
   }
 </Section>

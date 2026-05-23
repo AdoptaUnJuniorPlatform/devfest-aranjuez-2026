@@ -1,0 +1,122 @@
+[
+  {
+    "titulo": "Agenda 2025",
+    "id": "schedule",
+    "items": [
+      {
+        "hora": "09:00",
+        "duracion": "30m",
+        "titulo": "Apertura y registro"
+      },
+      {
+        "hora": "09:30",
+        "duracion": "30m",
+        "titulo": "Presentación",
+        "speaker": "",
+        "perfil": ""
+      },
+      {
+        "hora": "10:00",
+        "duracion": "50m",
+        "titulo": "Conceptualización del sonido como mecánica para narrar historias",
+        "speaker": "Pablo Rodríguez-Tembleco",
+        "perfil": ""
+      },
+      {
+        "hora": "10:50",
+        "duracion": "30m",
+        "titulo": "Psicología del feedback: cómo dar y recibir feedback sin romper el equipo",
+        "speaker": "Estefanía Peromingo",
+        "perfil": ""
+      },
+      {
+        "hora": "11:20",
+        "duracion": "30m",
+        "titulo": "Como conseguir tu primer trabajo en Tech",
+        "speaker": "Sergi Olives ",
+        "perfil": ""
+      },
+      {
+        "hora": "11:50",
+        "duracion": "30m",
+        "titulo": "Desayuno",
+        "speaker": "",
+        "perfil": ""
+      },
+      {
+        "hora": "12:20",
+        "duracion": "50m",
+        "titulo": "MCPs con Kotlin: Creando Superpoderes para tu Asistente IA",
+        "speaker": "Antonio Leiva",
+        "perfil": ""
+      },
+      {
+        "hora": "13:10",
+        "duracion": "20m",
+        "titulo": "Magia",
+        "speaker": "Raúl Fernández",
+        "perfil": ""
+      },
+      {
+        "hora": "13:30",
+        "duracion": "30m",
+        "titulo": "Reinventarse hacia el mundo Tech",
+        "speaker": "Maria del Carmen Tajuelo",
+        "perfil": ""
+      },
+      {
+        "hora": "14:00",
+        "duracion": "30m",
+        "titulo": "Agentes Python del Mañana: Descifrando los Enigmas de Planificación, UX y Memoria",
+        "speaker": "Máximo Fernández Núñez",
+        "perfil": ""
+      },
+      {
+        "hora": "14:30",
+        "duracion": "1h 15m",
+        "titulo": "Comida",
+        "speaker": "",
+        "perfil": ""
+      },
+      {
+        "hora": "15:45",
+        "duracion": "50m",
+        "titulo": "dose.VR()",
+        "speaker": "Irene Ruiz Pozo",
+        "perfil": ""
+      },
+      {
+        "hora": "16:35",
+        "duracion": "65m",
+        "titulo": "Mesa redonda",
+        "speaker": "Antonio Leiva, Máximo Fernández Núñez, Clara Quince, Lucía Cordero",
+        "perfil": ""
+      },
+      {
+        "hora": "17:40",
+        "duracion": "50m",
+        "titulo": "Vision Language Model",
+        "speaker": "Moisés Martínez",
+        "perfil": ""
+      },
+      {
+        "hora": "18:30",
+        "duracion": "30m",
+        "titulo": "Cierre y sorteos"
+      }
+    ]
+  },
+  {
+    "titulo": "Workshop Seguridad",
+    "id": "workshop",
+    "items": [
+      {
+        "hora": "12:20",
+        "duracion": "12:20 - 14:30",
+        "titulo": "CTF DevFest Aranjuez",
+        "speaker": "Nacho Fernández Diez",
+        "perfil": ""
+      }
+    ]
+  }
+]

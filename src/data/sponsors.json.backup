@@ -1,0 +1,36 @@
+{
+  "Oro": [
+    {
+      "name": "Ayuntamiento Aranjuez",
+      "logo": "/sponsors/aranjuez-firma_negro-01.webp",
+      "links": {
+        "website": "https://www.aranjuez.es/"
+      },
+      "htmlId": "aranjuez-logo"
+    },
+    {
+      "name": "Google Developer Groups",
+      "logo": "/sponsors/image.jpg",
+      "links": {
+        "website": "https://gdg.community.dev/"
+      }
+    },
+    {
+      "name": "Next Digital",
+      "logo": "/sponsors/next-digital-square.webp",
+      "links": {
+        "website": "https://www.nextdigital.es/"
+      }
+    }
+  ],
+  "Plata": [
+    {
+      "name": "Adopta Un Junior",
+      "logo": "/sponsors/image-adopta-un-junior.jpg",
+      "links": {
+        "website": "https://adoptaunjunior.es/"
+      }
+    }
+  ],
+  "Bronce": []
+}
