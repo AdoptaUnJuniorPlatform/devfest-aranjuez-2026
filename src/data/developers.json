@@ -1,39 +1,11 @@
 [
   {
-    "name": "Angie M. I. V.",
+    "name": "J. Ramón Carralero",
     "role": "Developer",
-    "picture": "/developers/AngieMIV.webp",
+    "picture": "/developers/JRamonCarralero.webp",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/angiemiv/",
-      "github": "https://github.com/AngieMiv",
-      "instagram": "https://www.instagram.com/angiemiv/"
-    }
-  },
-  {
-    "name": "Belén Suarez",
-    "role": "Developer",
-    "picture": "/developers/BelenSuarez.webp",
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/belen-suarez-42a4331b5/",
-      "github": "https://github.com/belensuarez477"
-    }
-  },
-  // {
-  //   "name": "Nombre Apellido",
-  //   "role": "Developer",
-  //   "picture": "/developers/NombreApellido.webp",
-  //   "socials": {
-  //     "linkedin": "https://www.linkedin.com/in/usuario/",
-  //     "github": "https://github.com/usuario"
-  //   }
-  // },
-  {
-    "name": "Glòria Monzó",
-    "role": "Developer",
-    "picture": "/developers/GloriaMonzo.webp",
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/gloriamonzo240879",
-      "github": "https://github.com/Aredhel269"
+      "linkedin": "https://www.linkedin.com/in/jos%C3%A9-ram%C3%B3n-carralero-garc%C3%ADa-75381b208/",
+      "github": "https://github.com/jramoncarralero"
     }
   },
   {
@@ -46,30 +18,21 @@
     }
   },
   {
-    "name": "J. Ramón Carralero",
+    "name": "Belén Suarez",
     "role": "Developer",
-    "picture": "/developers/JRamonCarralero.webp",
+    "picture": "/developers/BelenSuarez.webp",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/jos%C3%A9-ram%C3%B3n-carralero-garc%C3%ADa-75381b208/",
-      "github": "https://github.com/jramoncarralero"
+      "linkedin": "https://www.linkedin.com/in/belen-suarez-42a4331b5/",
+      "github": "https://github.com/belensuarez477"
     }
   },
   {
-    "name": "Manuel Tomasino",
+    "name": "Maria del Carmen Tajuelo",
     "role": "Developer",
-    "picture": "/developers/ManuelTomasino.webp",
+    "picture": "/developers/maria-del-carmen-tajuelo.webp",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/manuel-tomasino",
-      "github": "https://github.com/ShadeVI"
-    }
-  },
-  {
-    "name": "Marlon Velásquez",
-    "role": "Developer",
-    "picture": "/developers/MarlonVelasquez.webp",
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/marlon-velasquez/",
-      "github": "https://github.com/sargentogato"
+      "linkedin": "https://www.linkedin.com/in/carmentajuelo/",
+      "github": "https://github.com/CarmenTajuelo"
     }
   }
 ]
