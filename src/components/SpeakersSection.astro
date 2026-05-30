@@ -4,7 +4,7 @@ import Section from './Section.astro';
 import speakers from '../data/speakers.json';
 ---
 
-<Section id="speakers" title="Oradores">
+<Section id="speakers" title="Ponentes">
   {speakers.length > 0
     ? speakers.map((speaker) => (
         <Card
@@ -15,6 +15,6 @@ import speakers from '../data/speakers.json';
           variant="blue"
         />
       ))
-    : <p class={`text-lg font-semibold text-white`}>No hay oradores disponibles en este momento.</p>
+    : <p class={`text-lg font-semibold text-white`}>No hay ponentes disponibles en este momento.</p>
   }
 </Section>
