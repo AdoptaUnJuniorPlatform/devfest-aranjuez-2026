@@ -1,4 +1,4 @@
-# 🌟 WEB GDG ARANJUEZ [![GitHub Pages](https://img.shields.io/github/deployments/AdoptaUnJuniorPlatform/GDGAranjuez/github-pages?label=gh-pages&logo=github)](https://devfest2025.gdgaranjuez.com/) ![Deploy status](https://github.com/AdoptaUnJuniorPlatform/GDGAranjuez/actions/workflows/deploy.yml/badge.svg)
+# 🌟 WEB GDG ARANJUEZ [![GitHub Pages](https://img.shields.io/github/deployments/AdoptaUnJuniorPlatform/GDGAranjuez/github-pages?label=gh-pages&logo=github)](https://devfest2026.gdg-aranjuez.com/) ![Deploy status](https://github.com/AdoptaUnJuniorPlatform/GDGAranjuez/actions/workflows/deploy.yml/badge.svg)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Astro](https://img.shields.io/badge/Astro-5.8.1-FF5D01?logo=astro)](https://astro.build)
@@ -7,7 +7,7 @@
 [![ESLint](https://img.shields.io/badge/ESLint-9.27.0-4B32C3?logo=eslint)](https://eslint.org/)
 [![Prettier](https://img.shields.io/badge/Prettier-3.5.3-F7B93E?logo=prettier)](https://prettier.io/)
 
-> Sitio web oficial del DevFest 2025 organizado por GDG Aranjuez 🚀
+> Sitio web oficial del DevFest 2026 organizado por GDG Aranjuez 🚀
 
 ---
 
@@ -19,14 +19,14 @@ Este proyecto se despliega automáticamente a **GitHub Pages** cada vez que se h
 - No es necesario hacer el build manualmente: se ejecuta solo con cada cambio en `main`.
 
 🔗 Versión en producción:  
-👉 [https://devfest2025.gdgaranjuez.com/](https://devfest2025.gdgaranjuez.com/)
+👉 [https://devfest2026.gdg-aranjuez.com/](https://devfest2026.gdg-aranjuez.com/)
 
 ---
 
 ## 📖 Contexto
 
 GDG Aranjuez es una comunidad tecnológica asentada en Aranjuez, una localidad histórica en el sur de la Comunidad de Madrid.  
-El año pasado se realizó el primer evento grande, el [DevFest 2024](https://devfest-2024-aranjuez.vercel.app/), y este año vuelve para realizar un nuevo evento el 4 de Octubre.
+GDG Aranjuez organiza el DevFest en Aranjuez cada año. Tras las ediciones de [2024](https://devfest-2024-aranjuez.vercel.app/) y [2025](https://devfest2025.gdg-aranjuez.com/), la edición **2026** se celebrará el **3 de octubre**.
 
 ---
 
@@ -100,11 +100,11 @@ GDGAranjuez/
 
 | Elemento                               | Estado             | Comentarios                                                                                                                     |
 | -------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------------------------- |
-| Despliegue automático                  | ✅ Completado      | Se actualiza con cada cambio en `main`. Enlace: [devfest2025.gdgaranjuez.com](https://devfest2025.gdgaranjuez.com/)             |
+| Despliegue automático                  | ✅ Completado      | Se actualiza con cada cambio en `main`. Enlace: [devfest2026.gdg-aranjuez.com](https://devfest2026.gdg-aranjuez.com/)             |
 | Componentes reutilizables y responsive | ✅ Completado      | Sections like schedule, talks, speakers, organizers and sponsors implemented as reusable components.          |
 | Modo claro / oscuro                    | ✅ Completado      | Toggle funcional con soporte visual completo.                                                                                   |
 | Blog en Markdown                       | ✅ Completado      | Sección de artículos funcional con posts dinámicos.                                                                             |
-| Subdominios y estructura por ediciones | ❎ Parcial         | La edición 2024 está enlazada desde el subdominio 2025. Falta implementar estructura base para futuras ediciones y dominio GDG. |
+| Subdominios y estructura por ediciones | ❎ Parcial         | Las ediciones 2024 y 2025 están enlazadas desde el sitio 2026. Falta implementar estructura base para futuras ediciones y dominio GDG. |
 | Gestión vía CMS                        | ❌ No implementado | Pendiente para una posible versión ampliada del proyecto.                                                                       |
 
 ---
