@@ -3,8 +3,9 @@
 import '@/styles/global.css';
 import Footer from '@/components/Footer.astro';
 import Navbar from '@/components/Navbar.astro';
+import { site } from '@/data/site';
 
-const { title = 'GDG Aranjuez | DevFest 2026' } = Astro.props;
+const { title = `${site.name} | ${site.eventName}` } = Astro.props;
 ---
 
 <!doctype html>

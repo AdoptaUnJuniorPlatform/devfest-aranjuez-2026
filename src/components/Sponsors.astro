@@ -1,5 +1,6 @@
 ---
-import sponsorsData from '../data/sponsors.json';
+import { sponsors } from '@/data/sponsors';
+import { site } from '@/data/site';
 ---
 
 <section id="sponsors" class="py-16">
@@ -16,7 +17,7 @@ import sponsorsData from '../data/sponsors.json';
       <!-- Tarjetas de cada categoría -->
       <div class="space-y-6">
         {
-          Object.entries(sponsorsData as SponsorsData).map(([category, list]) => (
+          Object.entries(sponsors).map(([category, list]) => (
             <div class="bg-indigo-100 dark:bg-indigo-900/30 rounded-xl p-6">
               <h3 class="text-2xl font-semibold mb-4 capitalize text-black  dark:text-indigo-50 ">
                 {category}
@@ -69,7 +70,7 @@ import sponsorsData from '../data/sponsors.json';
         class="mt-16 text-center text-lg text-gray-700 dark:text-indigo-200"
       >
         <p>
-          Gracias a todos nuestros patrocinadores por apoyar DevFest 2026 de GDG Aranjuez.<br />
+          Gracias a todos nuestros patrocinadores por apoyar DevFest {site.edition} de GDG Aranjuez.<br />
           ¡Su apoyo impulsa a la comunidad tecnológica!
         </p>
       </div>

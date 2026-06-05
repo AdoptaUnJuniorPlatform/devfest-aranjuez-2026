@@ -1,11 +1,11 @@
 ---
 import ScheduleSection from "./ScheduleSection.astro";
-import scheduleData from "../data/schedule.json";
+import { schedule } from '@/data/schedule';
 ---
 
 {
-  scheduleData.length > 0 ? (
-    (scheduleData as ScheduleGroup[]).map((group) => (
+  schedule.length > 0 ? (
+    schedule.map((group) => (
       <ScheduleSection {...group} />
     ))
   ) : (

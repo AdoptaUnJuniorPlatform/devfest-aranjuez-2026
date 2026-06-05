@@ -1,5 +1,6 @@
 ---
 import Countdown from './Countdown.astro';
+import { site } from '@/data/site';
 ---
 
 <section class="text-center mb-10">
@@ -42,7 +43,7 @@ import Countdown from './Countdown.astro';
         bg-gradient-to-r from-blue-700 to-purple-700
         dark:bg-gradient-to-r dark:from-blue-300 dark:to-purple-300"
     >
-      DevFest Aranjuez 2026!
+      {site.eventName}!
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -60,8 +61,7 @@ import Countdown from './Countdown.astro';
   <div
     class="inline-block bg-gradient-to-r from-blue-700 to-purple-700 text-white px-4 py-2 rounded-full mb-6"
   >
-    <span class="text-lg font-medium">3 de octubre del 2026</span
-    >
+    <span class="text-lg font-medium">{site.dateDisplay}</span>
   </div>
 
   <!-- Countdown -->
@@ -74,15 +74,17 @@ import Countdown from './Countdown.astro';
     celebrado en nuestra ciudad al sur de Madrid.<br />
     ¡Desde <span
       class="text-blue-700 dark:text-blue-300 font-semibold"
-      >GDG Aranjuez</span
-    >, te esperamos para vivirlo juntos!
+      >{site.name}</span>, te esperamos para vivirlo juntos!
   </p>
 
   <!-- Buttons div -->
   <div class="flex justify-center flex-wrap mx-8 my-5">
     <!-- Entradas Button -->
-    <button
+    <a
       id="entradas-button"
+      href={site.urls.tickets}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Botón para conseguir entradas"
       class="group text-2xl md:text-3xl text-white font-semibold m-3 px-9 py-3
         rounded-full bg-gradient-to-r from-blue-800 to-purple-800
@@ -91,7 +93,6 @@ import Countdown from './Countdown.astro';
         transition-all duration-300 hover:cursor-pointer
         flex items-center gap-3
         focus:ring-3 dark:focus:ring-sky-400 focus:ring-offset-4 focus:ring-offset-sky-600 dark:focus:ring-offset-gray-700"
-      onclick="window.open('https://www.eventbrite.com/o/gdg-aranjuez-83358663463', '_blank')"
     >
       <span>ENTRADAS</span>
       <svg
@@ -121,7 +122,7 @@ import Countdown from './Countdown.astro';
           stroke-linejoin="round"
           stroke-width="2"></path>
       </svg>
-    </button>
+    </a>
     <!-- 
     <!-- Call for Papers Button (hidden)
     <button

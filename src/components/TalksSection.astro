@@ -1,13 +1,13 @@
 ---
 import Talks from './Talks.astro';
 import Section from './Section.astro';
-import talks from '../data/talks.json';
+import { talks } from '@/data/talks';
 ---
 
 <Section id="talks" title="Talks">
   {
     talks.length > 0
-      ? (talks as Talk[]).map((talk) => (
+      ? talks.map((talk) => (
           <Talks
             talkTitle={talk.talkTitle}
             description={talk.description}

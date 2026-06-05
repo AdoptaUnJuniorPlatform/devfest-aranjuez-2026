@@ -1,5 +1,7 @@
 ---
-const { titulo, id, items } = Astro.props;
+import type { ScheduleGroup } from '@/data/types';
+
+const { titulo, id, items } = Astro.props as ScheduleGroup;
 ---
 <section
   id={id}
@@ -16,7 +18,7 @@ const { titulo, id, items } = Astro.props;
   </h2>
   <ul class="space-y-6">
     {
-      items.map((item: any) => (
+      items.map((item) => (
         <li
           class="grid grid-cols-[80px_1fr] gap-x-6 items-start text-lg
                   border-b border-gray-400 dark:border-gray-600 pb-4 last:border-b-0"
