@@ -1,3 +1,3 @@
 import type { Organizer } from './types';
 
-export const organizers = [] satisfies Organizer[];
+export const organizers: Organizer[] = [];

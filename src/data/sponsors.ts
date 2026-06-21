@@ -1,7 +1,7 @@
 import type { SponsorsData } from './types';
 
-export const sponsors = {
+export const sponsors: SponsorsData = {
   Oro: [],
   Plata: [],
   Bronce: [],
-} satisfies SponsorsData;
+};

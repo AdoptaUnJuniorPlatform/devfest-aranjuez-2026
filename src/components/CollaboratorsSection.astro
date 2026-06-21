@@ -1,9 +1,7 @@
 ---
 import Card from './Card.astro';
 import Section from './Section.astro';
-import Socials from './Socials.astro';
 import { collaborators } from '@/data/collaborators';
-
 ---
 
 <Section id="collaborators" title="Colaboradores">
@@ -19,7 +17,9 @@ import { collaborators } from '@/data/collaborators';
         />
       ))
     ) : (
-      <p class="text-center dark:text-white py-10">Próximamente anunciaremos a nuestros colaboradores.</p>
+      <p class="text-center dark:text-white py-10">
+        Próximamente anunciaremos a nuestros colaboradores.
+      </p>
     )
   }
 </Section>
