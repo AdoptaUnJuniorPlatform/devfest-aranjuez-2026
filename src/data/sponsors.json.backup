@@ -1,14 +1,12 @@
 {
   "Oro": [
-    { },
     {
       "name": "Google Developer Groups",
       "logo": "/sponsors/image.jpg",
       "links": {
         "website": "https://gdg.community.dev/"
       }
-    },
-    
+    }
   ],
   "Plata": [
     {
