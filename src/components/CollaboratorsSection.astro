@@ -1,15 +1,13 @@
 ---
 import Card from './Card.astro';
 import Section from './Section.astro';
-import Socials from './Socials.astro';
-import collaborator from '../data/collaborators.json'
-
+import { collaborators } from '@/data/collaborators';
 ---
 
 <Section id="collaborators" title="Colaboradores">
   {
-    collaborator.length > 0 ? (
-      (collaborator as any[]).map((colab) => (
+    collaborators.length > 0 ? (
+      collaborators.map((colab) => (
         <Card
           name={colab.name}
           role={colab.role}
@@ -19,7 +17,9 @@ import collaborator from '../data/collaborators.json'
         />
       ))
     ) : (
-      <p class="text-center dark:text-white py-10">Próximamente anunciaremos a nuestros colaboradores.</p>
+      <p class="text-center dark:text-white py-10">
+        Próximamente anunciaremos a nuestros colaboradores.
+      </p>
     )
   }
 </Section>

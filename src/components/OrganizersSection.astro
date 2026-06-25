@@ -1,13 +1,13 @@
 ---
 import Card from './Card.astro';
 import Section from './Section.astro';
-import organizers from '../data/organizers.json';
+import { organizers } from '@/data/organizers';
 ---
 
 <Section id="organizers" title="Organizadores">
   {
     organizers.length > 0 ? (
-      (organizers as Organizer[]).map((org) => (
+      organizers.map((org) => (
         <Card
           name={org.name}
           role={org.role}

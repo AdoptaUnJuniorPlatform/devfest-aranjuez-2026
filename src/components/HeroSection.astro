@@ -1,5 +1,6 @@
 ---
 import Countdown from './Countdown.astro';
+import { site } from '@/data/site';
 ---
 
 <section class="text-center mb-10">
@@ -42,7 +43,7 @@ import Countdown from './Countdown.astro';
         bg-gradient-to-r from-blue-700 to-purple-700
         dark:bg-gradient-to-r dark:from-blue-300 dark:to-purple-300"
     >
-      DevFest Aranjuez 2026!
+      {site.eventName}!
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -60,8 +61,7 @@ import Countdown from './Countdown.astro';
   <div
     class="inline-block bg-gradient-to-r from-blue-700 to-purple-700 text-white px-4 py-2 rounded-full mb-6"
   >
-    <span class="text-lg font-medium">3 de octubre del 2026</span
-    >
+    <span class="text-lg font-medium">{site.dateDisplay}</span>
   </div>
 
   <!-- Countdown -->
@@ -74,7 +74,7 @@ import Countdown from './Countdown.astro';
     celebrado en nuestra ciudad al sur de Madrid.<br />
     ¡Desde <span
       class="text-blue-700 dark:text-blue-300 font-semibold"
-      >GDG Aranjuez</span
+      >{site.name}</span
     >, te esperamos para vivirlo juntos!
   </p>
 
@@ -83,7 +83,7 @@ import Countdown from './Countdown.astro';
     <!-- Entradas Button -->
     <a
       id="entradas-button"
-      href="https://www.eventbrite.com/o/gdg-aranjuez-83358663463"
+      href={site.urls.tickets}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Botón para conseguir entradas"
@@ -124,7 +124,7 @@ import Countdown from './Countdown.astro';
           stroke-width="2"></path>
       </svg>
     </a>
-    <!-- 
+    <!--
     <!-- Call for Papers Button (hidden)
     <button
       id="cfp-button"

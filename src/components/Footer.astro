@@ -1,5 +1,6 @@
 ﻿---
 import Socials from './Socials.astro';
+import { site } from '@/data/site';
 ---
 
 <footer
@@ -8,25 +9,25 @@ import Socials from './Socials.astro';
 >
   <div class="mb-3 scale-110">
     <Socials
-      name="GDG Aranjuez"
-      linkedin="https://www.linkedin.com/company/gdg-aranjuez/posts/?feedView=all"
-      twitter="https://x.com/GDGAranjuez"
+      name={site.name}
+      linkedin={site.urls.social.linkedin}
+      twitter={site.urls.social.twitter}
     />
   </div>
 
   <a
-    href="https://devfest2026.gdg-aranjuez.com/"
+    href={site.urls.site}
     target="_blank"
     rel="noopener noreferrer"
     class="mb-3 block text-center"
   >
-    DevFest 2026
+    DevFest {site.edition}
   </a>
 
   <div class="mb-3">
     <p class="mb-1 text-sm font-semibold">Ediciones anteriores</p>
     <a
-      href="https://devfest-2024-aranjuez.vercel.app/"
+      href={site.urls.pastEditions[2024]}
       target="_blank"
       rel="noopener noreferrer"
       class="block text-center"
@@ -34,7 +35,7 @@ import Socials from './Socials.astro';
       DEVFEST2024
     </a>
     <a
-      href="https://devfest2025.gdg-aranjuez.com/"
+      href={site.urls.pastEditions[2025]}
       target="_blank"
       rel="noopener noreferrer"
       class="block text-center"
@@ -44,7 +45,7 @@ import Socials from './Socials.astro';
   </div>
 
   <a
-    href="https://sessionize.com/devfest-aranjuez-2026/"
+    href={site.urls.cfp}
     target="_blank"
     rel="noopener noreferrer"
     class="mb-3 block text-center"
@@ -52,7 +53,7 @@ import Socials from './Socials.astro';
     Convocatoria de ponentes
   </a>
   <a
-    href="https://sessionize.com/devfest-aranjuez-2026/"
+    href={site.urls.codeOfConduct}
     target="_blank"
     rel="noopener noreferrer"
     class="mb-3 block text-center"
@@ -61,6 +62,6 @@ import Socials from './Socials.astro';
   </a>
 
   <p class="text-sm text-gray-600 dark:text-gray-200">
-    © 2026 Todos los derechos reservados.
+    © {site.edition} Todos los derechos reservados.
   </p>
 </footer>

@@ -1,3 +1,7 @@
+---
+import { site } from '@/data/site';
+---
+
 <head>
   <!-- Fuente tech opcional -->
   <link
@@ -80,7 +84,7 @@
         href="/"
         class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 drop-shadow"
       >
-        DevFest 2026
+        DevFest {site.edition}
       </a>
       <div class="flex items-center ml-auto 2xl:hidden">
         <button
@@ -116,7 +120,7 @@
   >
     <li>
       <a
-        href="https://www.eventbrite.com/o/gdg-aranjuez-83358663463"
+        href={site.urls.tickets}
         target="_blank"
         rel="noopener noreferrer"
         class="nav-link text-purple-700 dark:text-fuchsia-500 font-bold hover:text-blue-700 dark:hover:text-[#FABD04] transition"

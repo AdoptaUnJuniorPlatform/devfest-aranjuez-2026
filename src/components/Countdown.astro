@@ -1,3 +1,7 @@
+---
+import { site } from '@/data/site';
+---
+
 <section id="countdown" class="text-center text-mono py-5 bg-blue-600/10 dark:bg-indigo-400/10 rounded-2xl mb-6">
 
   <h3 id="countdown-title" class="text-xl font-semibold text-gray-500 dark:text-gray-200">FALTAN</h3>
@@ -24,8 +28,7 @@
     </div>
   </div>
 
- <script type="module" lang="ts">
-  const eventDate = '2026-10-03';
+ <script define:vars={{ eventDate: site.date }} type="module" lang="ts">
 
   // Phase boundaries — all in Madrid timezone (CEST in October = +02:00)
   const eventDayStart  = new Date(`${eventDate}T00:00:00+02:00`).getTime(); // Phase 2 starts

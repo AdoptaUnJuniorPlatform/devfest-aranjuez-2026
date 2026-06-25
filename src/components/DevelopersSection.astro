@@ -1,21 +1,7 @@
 ---
 import Card from './Card.astro';
 import Section from './Section.astro';
-import developersRaw from '../data/developers.json?raw';
-
-interface Developer {
-  name: string;
-  role?: string;
-  picture: string;
-  socials?: Record<string, string>;
-}
-
-// Allows keeping a commented template entry inside developers.json.
-const developers = JSON.parse(
-  developersRaw
-    .replace(/\/\*[\s\S]*?\*\//g, '')
-    .replace(/^\s*\/\/.*$/gm, ''),
-) as Developer[];
+import { developers } from '@/data/developers';
 ---
 
 <Section id="developers" title="Desarrolladores">
