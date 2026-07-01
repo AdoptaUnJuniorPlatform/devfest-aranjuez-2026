@@ -8,9 +8,6 @@ export const site = {
     site: 'https://devfest2026.gdg-aranjuez.com/',
     tickets:
       'https://www.eventbrite.com/o/gdg-aranjuez-83358663463',
-    cfp: 'https://sessionize.com/devfest-aranjuez-2026/',
-    codeOfConduct:
-      'https://sessionize.com/devfest-aranjuez-2026/',
     pastEditions: {
       2024: 'https://devfest-2024-aranjuez.vercel.app/',
       2025: 'https://devfest2025.gdg-aranjuez.com/',
